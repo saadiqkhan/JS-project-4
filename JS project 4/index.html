@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript objects & its properties</h1>
+    <p>there are 2 different ways to access & object property</p>
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <script>
+        //create an object
+        var person={
+            firstname:" Saadiq",
+            lastname:" Khan",
+            age: 10,
+            color:" green"
+        }
+        //display soe data from the object
+        document.getElementById("a").innerHTML="my name is"+person.firstname+person["lastname"]
+        document.getElementById("b").innerHTML="my fav color is"+person["color"]
+        document.getElementById("c").innerHTML="my age is"+person["age"]
+    </script>
+</body>
+</html>
